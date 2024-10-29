@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japflix</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    body {
+      background-color: #343a40;
+      color: white;
+    }
+    .offcanvas-body ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
+  </style>
+</head>
+
+<body class="bg-dark">
+  <main>
+
+ <!-- Contenedor para la película seleccionada -->
+<!--  <div id="detallePelicula" class="container bg-secondary text-light p-3 mb-3" style="display: none;">
+  <h2 id="detalleTitle"></h2>
+  <p id="detalleOverview"></p>
+  <ul id="detalleGenres"></ul>
+</div>
+ -->
+
+ <!-- Offcanvas para mostrar detalles de la película -->
+ <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+      <h5 id="offcanvasTitle" class="offcanvas-title"></h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <p id="offcanvasOverview"></p>
+      <h6>Géneros:</h6>
+      <ul id="offcanvasGenres"></ul>
+      <h6>Detalles:</h6>
+      <div id="offcanvasDetails"></div>
+  </div>
+</div>
+ 
+
+
+<!-- Calificación estrellas -->
+<!-- <form class="rating">
+  <input type="radio" name="rating" id="rating5" value="5">
+  <label for="rating5" class="fa fa-star"></label>
+  
+  <input type="radio" name="rating" id="rating4" value="4">
+  <label for="rating4" class="fa fa-star"></label>
+  
+  <input type="radio" name="rating" id="rating3" value="3">
+  <label for="rating3" class="fa fa-star"></label>
+  
+  <input type="radio" name="rating" id="rating2" value="2">
+  <label for="rating2" class="fa fa-star"></label>
+  
+  <input type="radio" name="rating" id="rating1" value="1">
+  <label for="rating1" class="fa fa-star"></label>
+</form> -->
+
+    <div class="text-center container">
+      <div class="row py-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1>
+          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King">
+          <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="album">
+      <ul id="listaPeliculas" class="list-group container"></ul>
+  </div>
+  </main>
+
+  <footer class="text-muted py-3">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">
+          Jovenes a Programar</a>.
+      <p class="mb-1">Generado con fines estrictamente educativos.</p>
+    </div>
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+ 
+</body>
+
+</html>
+
+
+
